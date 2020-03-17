@@ -8,16 +8,18 @@ import instaData from "../../dummy-data";
 
 const PostsPage = () => {
   // set up state for your data
-  const [postData, setPostData] = useState (instaData);
+  //const [postData, setPostData] = useState (instaData);
+  const [post] = useState(instaData);
   //console.log(instaData);
   //console.log(useState);
   //onsole.log(postData);
   return (
     <div className="posts-container-wrapper">
       {/* map through data here to return a Post and pass data as props to Post */
-        postData.map( p => (
-          <Post post = {thumbnailUrl={p.imageUrl} dataFromParent={p}} />
-        ))}
+        post.map( p => (
+          <Post thumbnailUrl={p.thumbnailUrl} imageUrl={p.imageUrl} />
+
+))}
     </div>
   );
 };
