@@ -8,6 +8,7 @@ import "./Posts.css";
 
 // pass props in this file to
 const Post = props => {
+  console.log(props);
   // set up state for the likes
 //const [likeState, setLikeState] = useState();
   return (
