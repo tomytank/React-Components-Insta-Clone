@@ -1,23 +1,27 @@
 //Complete the necessary code in this file
-// import useState
+// import useState *done
 import React, {useState} from "react";
 import Post from "./Post";
 import "./Posts.css";
-import instaData from "../../dummy-data";
-// import data 
+import dummydata from "../../dummy-data";
+// import data *done
 
 const PostsPage = () => {
   // set up state for your data
-  const [postData, setPostData] = useState (instaData);
-  console.log(instaData);
-  console.log(useState);
-  console.log(postData);
+  // const [postData, setPostData] = useState (dummy);
+  const [post] = useState(dummydata);
+  //console.log(instaData);
+  //console.log(useState);
+  //onsole.log(postData);
   return (
     <div className="posts-container-wrapper">
       {/* map through data here to return a Post and pass data as props to Post */
-      <Post post = {postData} />
-      
-      }
+        post.map( p => (
+
+          <div>
+            <Post post={p} />
+          </div>
+))}
     </div>
   );
 };

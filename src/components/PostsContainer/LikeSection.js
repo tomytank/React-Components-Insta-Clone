@@ -17,8 +17,8 @@ const LikeSection = props => {
         <i className="far fa-comment" />
       </div>
     </div>
-    <p className="like-number">
-      
+    <p className="like-number" onClick={props.increaseLikes}>
+    {props.currentLikes}
       likes</p>
 </div>
   )
