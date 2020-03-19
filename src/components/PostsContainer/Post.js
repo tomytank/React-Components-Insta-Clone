@@ -4,6 +4,7 @@ import CommentSection from "../CommentSection/CommentSectionContainer";
 import LikeSection from "./LikeSection";
 import PostHeader from "./PostHeader";
 
+
 import "./Posts.css";
 
 // pass props in this file to

@@ -3,13 +3,13 @@
 import React, {useState} from "react";
 import Post from "./Post";
 import "./Posts.css";
-import instaData from "../../dummy-data";
+import dummydata from "../../dummy-data";
 // import data 
 
 const PostsPage = () => {
   // set up state for your data
   //const [postData, setPostData] = useState (instaData);
-  const [post] = useState(instaData);
+  const [post] = useState(dummydata);
   //console.log(instaData);
   //console.log(useState);
   //onsole.log(postData);
@@ -17,6 +17,7 @@ const PostsPage = () => {
     <div className="posts-container-wrapper">
       {/* map through data here to return a Post and pass data as props to Post */
         post.map( p => (
+          
           <Post thumbnailUrl={p.thumbnailUrl} imageUrl={p.imageUrl} />
 
 ))}
