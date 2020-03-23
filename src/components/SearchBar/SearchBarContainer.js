@@ -2,11 +2,12 @@
 import React from "react";
 import "./SearchBar.css";
 
+const styles = {fontSize: '40px'};
 const SearchBar = () => {
   return (
     <div className="search-bar-wrapper">
       <div className="image-wrapper">
-        <i className="fab fa-instagram" />
+        <i className="fa fa-instagram" style= {styles}/>
       </div>
       <form className="search-form">
         <input
@@ -15,14 +16,14 @@ const SearchBar = () => {
         />
       </form>
       <div className="social-wrapper">
-        <div className="social">
-          <i className="far fa-compass" />
+        <div className="social" style= {styles} >
+          <i className="fa fa-compass" />
         </div>
-        <div className="social">
-          <i className="far fa-heart" />
+        <div className="social" style= {styles}>
+          <i className="fa fa-heart" />
         </div>
-        <div className="social">
-          <i className="far fa-user-circle" />
+        <div className="social" style= {styles}>
+          <i className="fa fa-user-circle" />
         </div>
       </div>
     </div>
