@@ -2,7 +2,7 @@
 import React from "react";
 import "./SearchBar.css";
 
-const styles = {fontSize: '40px'};
+const styles = {fontSize: '35px'};
 const SearchBar = () => {
   return (
     <div className="search-bar-wrapper">
@@ -23,7 +23,7 @@ const SearchBar = () => {
           <i className="fa fa-heart" />
         </div>
         <div className="social" style= {styles}>
-          <i className="fa fa-user-circle" />
+          <i className="fa fa-user" />
         </div>
       </div>
     </div>
