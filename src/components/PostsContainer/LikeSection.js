@@ -18,8 +18,7 @@ const LikeSection = props => {
       </div>
     </div>
     <p className="like-number" onClick={props.increaseLikes}>
-    {props.currentLikes}
-      likes</p>
+      {props.currentLikes} likes</p>
 </div>
   )
 };
