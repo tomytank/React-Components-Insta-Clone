@@ -4,7 +4,7 @@ PostsContainer components and the CommentSection Components.
 Not all files need code added. 
 Look at each file to see where you need to pass props or add code 
 */
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 // import dummydata from "./dummy-data";
 import SearchBarContainer from "./components/SearchBar/SearchBarContainer";

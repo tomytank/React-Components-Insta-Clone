@@ -6,13 +6,22 @@ import "./Comment.css";
 
 const CommentSection = props => {
   // Add state for the comments
-const [comment, setComment] = useState();
+console.log("The props we got in CSC",props);
+const [comment, setComment] = useState(props);
+console.log("The destructured props",comment);
   return (
     <div>
-      {/* map through the comments data and return the Comment component */}
+      {/* map through the comments data and return the Comment component */
+      comment.comments.map(e => (
+        <div>
+          <Comment comment = {{username: e.username, text: e.text}} />
+        </div>
+      ))}
       <CommentInput />
     </div>
   );
 };
 
 export default CommentSection;
+//<Comment username= {e.username} text = {e.text} />
+//          <Comment comment = {e.username, e.text} />
