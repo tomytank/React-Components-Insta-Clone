@@ -10,6 +10,8 @@ const PostsPage = () => {
   // set up state for your data *done
   // const [postData, setPostData] = useState (dummy);
   const [post] = useState(dummydata);
+  const rand = Math.random()*1000;
+  console.log("rand", rand);
   //console.log(instaData);
   //console.log(useState);
   console.log(post);
@@ -19,7 +21,7 @@ const PostsPage = () => {
         post.map( p => (
 
           <div>
-            <Post post={p} />
+            <Post post={p} key= {rand}/>
           </div>
 ))}
     </div>
