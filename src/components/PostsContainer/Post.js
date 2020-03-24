@@ -4,6 +4,7 @@ import CommentSection from "../CommentSection/CommentSectionContainer";
 import LikeSection from "./LikeSection";
 import PostHeader from "./PostHeader";
 import PostsPage from "./PostsPage";
+import Date from "../CommentSection/Date";
 
 
 import "./Posts.css";
@@ -36,6 +37,10 @@ const increaseLikes = () => {
       <CommentSection
         postId={props.post.imageUrl}
         comments={props.post.comments} 
+        
+      />
+      <Date 
+      timestamp={props.post.timestamp}
       />
     </div>
   );

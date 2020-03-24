@@ -14,7 +14,7 @@ console.log("The destructured props",comment);
       {/* map through the comments data and return the Comment component */
       comment.comments.map(e => (
         <div>
-          <Comment comment = {{username: e.username, text: e.text}} />
+          <Comment comment = {{username: e.username, text: e.text, timestamp:e.timestamp}} />
         </div>
       ))}
       <CommentInput />
